@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17251f">
+  <title>IndoTourism — Candi Prambanan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="stage">
+
+    <!-- Background -->
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo">
+        <span class="logo-mark">I</span>
+        <span>Indo<span class="logo-light">Tourism</span></span>
+      </a>
+
+      <nav class="navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+      </nav>
+
+      <a href="#gallery" class="header-button">
+        Explore
+        <img src="images/icons/arrow-right.png" alt="">
+      </a>
+    </header>
+
+    <!-- Main Content -->
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span>
+          EXPLORE THE BEAUTY OF INDONESIA
+        </p>
+
+        <h1>
+          Candi<br>
+          <span>Prambanan</span>
+        </h1>
+
+        <p class="hero-description">
+          Menjelajahi keindahan warisan budaya Indonesia.
+          Saksikan kemegahan arsitektur Candi Prambanan
+          yang menjadi salah satu mahakarya bersejarah.
+        </p>
+
+        <a href="#about" class="explore-button">
+          Jelajahi Sekarang
+          <img src="images/icons/arrow-right.png" alt="">
+        </a>
+      </div>
+
+      <div class="hero-side">
+        <div class="side-line"></div>
+        <span>DESTINASI WISATA INDONESIA</span>
+      </div>
+
+    </section>
+
+    <!-- Bottom Information -->
+    <section class="bottom-section" id="about">
+
+      <div class="location-info">
+        <img src="images/icons/map-pin.png" alt="Lokasi">
+
+        <div>
+          <span class="info-label">LOKASI</span>
+          <p>Sleman, Yogyakarta, Indonesia</p>
+        </div>
+      </div>
+
+      <div class="social-media">
+        <a href="#" aria-label="Instagram">
+          <img src="images/icons/instagram.png" alt="Instagram">
+        </a>
+
+        <a href="#" aria-label="Facebook">
+          <img src="images/icons/facebook.png" alt="Facebook">
+        </a>
+
+        <a href="#" aria-label="Twitter">
+          <img src="images/icons/twitter.png" alt="Twitter">
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="gallery">
+
+    <div class="gallery-heading">
+      <div>
+        <p class="section-label">VISUAL JOURNEY</p>
+        <h2>Keindahan <span>Prambanan</span></h2>
+      </div>
+
+      <p class="gallery-description">
+        Temukan pesona Candi Prambanan melalui
+        berbagai sudut keindahannya.
+      </p>
+    </div>
+
+    <div class="gallery" id="gallery-list">
+
+      <button class="gallery-item selected" data-index="0"
+        aria-label="Lihat foto Prambanan 1">
+        <img src="images/prambanan.jpg" alt="Candi Prambanan">
+        <span class="photo-number">01</span>
+      </button>
+
+      <button class="gallery-item" data-index="1"
+        aria-label="Lihat foto Prambanan 2">
+        <img src="images/prambanan-2.jpg" alt="Arsitektur Candi Prambanan">
+        <span class="photo-number">02</span>
+      </button>
+
+      <button class="gallery-item" data-index="2"
+        aria-label="Lihat foto Prambanan 3">
+        <img src="images/prambanan-3.jpg" alt="Kompleks Candi Prambanan">
+        <span class="photo-number">03</span>
+      </button>
+
+      <button class="gallery-item" data-index="3"
+        aria-label="Lihat foto Prambanan 4">
+        <img src="images/prambanan-4.jpg" alt="Detail Candi Prambanan">
+        <span class="photo-number">04</span>
+      </button>
+
+      <button class="gallery-item" data-index="4"
+        aria-label="Lihat foto Prambanan 5">
+        <img src="images/prambanan-5.jpg" alt="Pemandangan Candi Prambanan">
+        <span class="photo-number">05</span>
+      </button>
+
+    </div>
+
+    <div class="gallery-footer">
+      <p>Pilih gambar untuk melihat lebih dekat.</p>
+      <span>INDONESIA — CULTURAL HERITAGE</span>
+    </div>
+
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+
+    <button class="close-lightbox" id="close-lightbox"
+      aria-label="Tutup gambar">
+      <img src="images/icons/close.png" alt="">
+    </button>
+
+    <button class="lightbox-arrow previous" id="previous-photo"
+      aria-label="Foto sebelumnya">
+      <img src="images/icons/arrow-right.png" alt="">
+    </button>
+
+    <div class="lightbox-content">
+      <img id="lightbox-image" src="images/prambanan.jpg"
+        alt="Foto Candi Prambanan">
+
+      <div class="lightbox-caption">
+        <span id="photo-counter">01 / 05</span>
+        <span>CANDI PRAMBANAN</span>
+      </div>
+    </div>
+
+    <button class="lightbox-arrow next" id="next-photo"
+      aria-label="Foto berikutnya">
+      <img src="images/icons/arrow-right.png" alt="">
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
